@@ -7,9 +7,10 @@ const ListaCitas = ({ citas, eliminarCita }) => (
       <h2 className="card-title text-center">Administra las citas aqui</h2>
       <div className="lista-citas">
         {
-          /*/citas.map(cita => (
+          /*citas.map(cita => (
             <Cita key={cita.id} cita={cita} eliminarCita={eliminarCita} />
           ))*/
+          console.log(citas)
         }
       </div>
     </div>
