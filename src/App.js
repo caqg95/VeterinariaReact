@@ -9,13 +9,11 @@ class App extends Component {
   };
     crearNuevaCita = datos => {
       // copiar el state actual
-     const dcita=this.state.citas;
-     dcita.push (
-          datos
-      );
+     const citas=this.state.citas;
+     citas.push (datos);
      //const citas = {...this.state.citas, datos};
-      // agregar el nuevo state
-      this.setState({citas:dcita});
+     // agregar el nuevo state
+     this.setState({citas});
     }
   render() {
     return (

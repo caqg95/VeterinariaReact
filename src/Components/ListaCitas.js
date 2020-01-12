@@ -16,6 +16,5 @@ const ListaCitas = ({ citas, eliminarCita }) => {
     </div>
   </div>
   )
-
 }
 export default ListaCitas;
