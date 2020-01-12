@@ -1,19 +1,21 @@
 import React from "react";
 import Cita from "./Cita";
-const list = ['a', 'b', 'c'];
-const ListaCitas = ({ citas, eliminarCita }) => (
-  <div className="card mt-2 py-5">
+
+const ListaCitas = ({ citas, eliminarCita }) => {
+  return(
+    <div className="card mt-2 py-5">
     <div className="card-body">
       <h2 className="card-title text-center">Administra las citas aqui</h2>
       <div className="lista-citas">
         {
-          /*citas.map(cita => (
+         citas.map(cita => (
             <Cita key={cita.id} cita={cita} eliminarCita={eliminarCita} />
-          ))*/
-          console.log(citas)
+          ))   
         }
       </div>
     </div>
   </div>
-);
+  )
+
+}
 export default ListaCitas;

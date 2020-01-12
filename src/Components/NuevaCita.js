@@ -48,10 +48,8 @@ class NuevaCita extends Component {
          // generar objeto con los datos
          const nuevaCita = {...this.state.cita};
          nuevaCita.id = uuid();
-
          // Agregar la cita al state de App
          this.props.crearNuevaCita(nuevaCita)
-
          // Colocar en el state el stateInicial
          this.setState({
              ...stateInicial
